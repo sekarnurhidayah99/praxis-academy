@@ -1,0 +1,312 @@
+
+1. C:\Users\asus>nslookup www.google.com
+Server:  1.100.168.192.in-addr.arpa
+Address:  192.168.100.1
+
+Non-authoritative answer:
+Name:    www.google.com
+Addresses:  2404:6800:4003:c03::6a
+          74.125.130.106
+          74.125.130.104
+          74.125.130.147
+          74.125.130.99
+          74.125.130.105
+          74.125.130.103
+
+2. 
+C:\Users\asus>ipconfig
+
+Windows IP Configuration
+
+
+Ethernet adapter Ethernet:
+
+   Media State . . . . . . . . . . . : Media disconnected
+   Connection-specific DNS Suffix  . :
+
+Wireless LAN adapter Local Area Connection* 3:
+
+   Media State . . . . . . . . . . . : Media disconnected
+   Connection-specific DNS Suffix  . :
+
+Wireless LAN adapter Local Area Connection* 4:
+
+   Media State . . . . . . . . . . . : Media disconnected
+   Connection-specific DNS Suffix  . :
+
+Wireless LAN adapter Wi-Fi:
+
+   Connection-specific DNS Suffix  . :
+   Link-local IPv6 Address . . . . . : fe80::f130:4477:9bf7:30d7%2
+   IPv4 Address. . . . . . . . . . . : 192.168.100.203
+   Subnet Mask . . . . . . . . . . . : 255.255.255.0
+   Default Gateway . . . . . . . . . : 192.168.100.1
+
+Ethernet adapter Bluetooth Network Connection:
+
+   Media State . . . . . . . . . . . : Media disconnected
+   Connection-specific DNS Suffix  . :
+
+3. 
+C:\Users\asus>mkdir sekar
+
+4.
+C:\Users\asus>hostname
+DESKTOP-98O1J1U
+5.
+C:\Users\asus>getmac /v
+
+Connection Name Network Adapter Physical Address    Transport Name
+=============== =============== =================== ==========================================================
+Bluetooth Netwo Bluetooth Devic F0-03-8C-15-CF-AC   Media disconnected
+Ethernet        Realtek PCIe GB 70-4D-7B-47-1C-48   Media disconnected
+Wi-Fi           Qualcomm Athero F0-03-8C-15-CF-AD   \Device\Tcpip_{02EF634A-A875-4EFB-B4B5-B6AB9369FDEA}
+6.
+C:\Users\asus>nbtstat /n
+
+Ethernet:
+Node IpAddress: [0.0.0.0] Scope Id: []
+
+    No names in cache
+
+Bluetooth Network Connection:
+Node IpAddress: [0.0.0.0] Scope Id: []
+
+    No names in cache
+
+Wi-Fi:
+Node IpAddress: [192.168.100.203] Scope Id: []
+
+                NetBIOS Local Name Table
+
+       Name               Type         Status
+    ---------------------------------------------
+    DESKTOP-98O1J1U<20>  UNIQUE      Registered
+    DESKTOP-98O1J1U<00>  UNIQUE      Registered
+    WORKGROUP      <00>  GROUP       Registered
+    WORKGROUP      <1E>  GROUP       Registered
+    WORKGROUP      <1D>  UNIQUE      Registered
+    ??__MSBROWSE__?<01>  GROUP       Registered
+
+Local Area Connection* 3:
+Node IpAddress: [0.0.0.0] Scope Id: []
+
+    No names in cache
+
+Local Area Connection* 4:
+Node IpAddress: [0.0.0.0] Scope Id: []
+
+    No names in cache
+7.
+C:\Users\asus>query user
+ USERNAME              SESSIONNAME        ID  STATE   IDLE TIME  LOGON TIME
+>asus                  console            10  Active    1+02:39  18-Feb-20 8:23
+8.
+C:\Users\asus>netstat
+
+Active Connections
+
+  Proto  Local Address          Foreign Address        State
+  TCP    127.0.0.1:54973        DESKTOP-98O1J1U:54983  ESTABLISHED
+  TCP    127.0.0.1:54983        DESKTOP-98O1J1U:54973  ESTABLISHED
+  TCP    127.0.0.1:55252        DESKTOP-98O1J1U:55253  ESTABLISHED
+  TCP    127.0.0.1:55253        DESKTOP-98O1J1U:55252  ESTABLISHED
+  TCP    127.0.0.1:55262        DESKTOP-98O1J1U:55263  ESTABLISHED
+  TCP    127.0.0.1:55263        DESKTOP-98O1J1U:55262  ESTABLISHED
+  TCP    127.0.0.1:55312        DESKTOP-98O1J1U:55313  ESTABLISHED
+  TCP    127.0.0.1:55313        DESKTOP-98O1J1U:55312  ESTABLISHED
+  TCP    127.0.0.1:55577        DESKTOP-98O1J1U:55578  ESTABLISHED
+  TCP    127.0.0.1:55578        DESKTOP-98O1J1U:55577  ESTABLISHED
+  TCP    127.0.0.1:55691        DESKTOP-98O1J1U:55692  ESTABLISHED
+  TCP    127.0.0.1:55692        DESKTOP-98O1J1U:55691  ESTABLISHED
+  TCP    127.0.0.1:55794        DESKTOP-98O1J1U:55795  ESTABLISHED
+  TCP    127.0.0.1:55795        DESKTOP-98O1J1U:55794  ESTABLISHED
+  TCP    127.0.0.1:56673        DESKTOP-98O1J1U:56674  ESTABLISHED
+  TCP    127.0.0.1:56674        DESKTOP-98O1J1U:56673  ESTABLISHED
+9.
+
+C:\Users\asus>tree c:\ /f | more
+Folder PATH listing
+Volume serial number is D4DD-5E0A
+C:\
++---easeus_tb_cloud
++---Intel
+¦   +---ExtremeGraphics
+¦   ¦   +---CUI
+¦   ¦       +---Resource
+¦   +---gp
+¦   +---Logs
+¦           IntelCPHS.log
+¦           IntelGFX.log
+¦           IntelGFXCoin.log
+¦
++---PerfLogs
++---Program Files
+¦   +---Adobe
+¦   ¦   +---Adobe Bridge CS6 (64 Bit)
+¦   ¦   ¦   ¦   ACE.dll
+¦   ¦   ¦   ¦   adbeape.dll
+¦   ¦   ¦   ¦   AdobePDFL.dll
+¦   ¦   ¦   ¦   AdobePIP.dll
+¦   ¦   ¦   ¦   AdobePSL.dll
+¦   ¦   ¦   ¦   AdobeXMP.dll
+¦   ¦   ¦   ¦   AdobeXMPFiles.dll
+¦   ¦   ¦   ¦   AdobeXMPScript.dll
+¦   ¦   ¦   ¦   adobe_caps.dll
+¦   ¦   ¦   ¦   AGM.dll
+¦   ¦   ¦   ¦   ahclient.dll
+-- More  --
+10.
+C:\Users\asus>cmdkey /list
+
+Currently stored credentials:
+
+    Target: MicrosoftAccount:target=SSO_POP_Device
+    Type: Generic
+    User: 02uribqslhsg
+    Saved for this logon only
+
+    Target: LegacyGeneric:target=Adobe App Prefetched Info (QWRvYmVYRDF7fTIwMTgwNzIwMDE)(Part6)
+    Type: Generic
+    User: App Prefetched Info
+    Local machine persistence
+
+    Target: LegacyGeneric:target=git:https://arismargo10@gitlab.com
+    Type: Generic
+    User: arismargo10
+    Local machine persistence
+
+    Target: LegacyGeneric:target=Adobe User Info(Part2)
+    Type: Generic
+    User: User DT
+    Local machine persistence
+
+    Target: LegacyGeneric:target=Adobe App Prefetched Info (QWRvYmVYRDF7fTIwMTgwNzIwMDE)(Part1)
+    Type: Generic
+    User: App Prefetched Info
+    Local machine persistence
+
+    Target: LegacyGeneric:target=Adobe User Info(Part1)
+    Type: Generic
+    User: User DT
+    Local machine persistence
+
+    Target: LegacyGeneric:target=Adobe App Prefetched Info (QWRvYmVYRDF7fTIwMTgwNzIwMDE)(Part5)
+    Type: Generic
+    User: App Prefetched Info
+    Local machine persistence
+
+    Target: LegacyGeneric:target=git:https://gitlab.com
+    Type: Generic
+    User: arismargo10
+    Local machine persistence
+
+    Target: LegacyGeneric:target=Adobe App Prefetched Info (QWRvYmVYRDF7fTIwMTgwNzIwMDE)(Part4)
+    Type: Generic
+    User: App Prefetched Info
+    Local machine persistence
+
+    Target: LegacyGeneric:target=Adobe App Prefetched Info (QWRvYmVYRDF7fTIwMTgwNzIwMDE)(Part2)
+    Type: Generic
+    User: App Prefetched Info
+    Local machine persistence
+
+    Target: LegacyGeneric:target=Adobe App Prefetched Info (QWRvYmVYRDF7fTIwMTgwNzIwMDE)(Part3)
+    Type: Generic
+    User: App Prefetched Info
+    Local machine persistence
+
+    Target: WindowsLive:target=virtualapp/didlogical
+    Type: Generic
+    User: 02uribqslhsg
+    Local machine persistence
+11.
+C:\Users\asus>compact /c /s
+
+ Setting the directory C:\Users\asus\ to compress new files [OK]
+
+ Compressing files in C:\Users\asus\
+
+.angular-config.json        90 :        90 = 1.0 to 1 [OK]
+.astah                      0 :         0 = 1.0 to 1 [OK]
+.bash_history            3273 :      3273 = 1.0 to 1 [OK]
+.config                     0 :         0 = 1.0 to 1 [OK]
+.configprops                0 :         0 = 1.0 to 1 [OK]
+.datastorage                0 :         0 = 1.0 to 1 [OK]
+.gitconfig                 72 :        72 = 1.0 to 1 [OK]
+.ionic                      0 :         0 = 1.0 to 1 [OK]
+.matplotlib                 0 :         0 = 1.0 to 1 [OK]
+.spss                       0 :         0 = 1.0 to 1 [OK]
+3D Objects                  0 :         0 = 1.0 to 1 [OK]
+Application Data: Access is denied.
+
+13 files within 2 directories were compressed.
+3,435 total bytes of data are stored in 3,435 bytes.
+The compression ratio is 1.0 to 1.
+12.
+
+C:\Users\asus>date /t
+18-Feb-20
+13.
+C:\Users\asus>defrag C: /U /V
+Microsoft Drive Optimizer
+Copyright (c) Microsoft Corp.
+
+The storage optimizer cannot start because you have insufficient priveleges to perform this operation. (0x89000024)
+
+14.
+
+C:\Users\asus>klist
+
+Current LogonId is 0:0xbf67210
+
+Cached Tickets: (0)
+15.
+C:\Users\asus>time /t
+12:21
+16.
+C:\Users\asus>timeout /t 10
+
+Waiting for  0 seconds, press a key to continue ...
+17.
+
+C:\Users\asus>tracert corp7.microsoft.com
+
+Tracing route to corp7.microsoft.com [36.86.63.182]
+over a maximum of 30 hops:
+
+  1     7 ms     7 ms     3 ms  1.100.168.192.in-addr.arpa [192.168.100.1]
+  2     7 ms    10 ms     7 ms  180.254.80.1
+  3     3 ms     2 ms     3 ms  197.1.160.125.in-addr.arpa [125.160.1.197]
+  4     3 ms     2 ms     2 ms  180.252.3.241
+  5    16 ms    13 ms    12 ms  36.86.63.177
+  6     *        *       13 ms  36.86.63.182
+
+Trace complete.
+18.
+C:\Users\asus>driverquery /fo csv
+"Module Name","Display Name","Driver Type","Link Date"
+"1394ohci","1394 OHCI Compliant Host Controller","Kernel ",""
+"3ware","3ware","Kernel ","19-May-15 12:28:03"
+"ACPI","Microsoft ACPI Driver","Kernel ",""
+"AcpiDev","ACPI Devices driver","Kernel ",""
+"acpiex","Microsoft ACPIEx Driver","Kernel ",""
+"acpipagr","ACPI Processor Aggregator Driver","Kernel ",""
+"AcpiPmi","ACPI Power Meter Driver","Kernel ",""
+"acpitime","ACPI Wake Alarm Driver","Kernel ",""
+"ADP80XX","ADP80XX","Kernel ","10-Apr-15 10:49:48"
+"AFD","Ancillary Function Driver for Winsock","Kernel ",""
+"afunix","afunix","Kernel ",""
+"ahcache","Application Compatibility Cache","Kernel ",""
+"AmdK8","AMD K8 Processor Driver","Kernel ",""
+"AmdPPM","AMD Processor Driver","Kernel ",""
+"amdsata","amdsata","Kernel ","15-May-15 02:14:52"
+"amdsbs","amdsbs","Kernel ","12-Dec-12 11:21:44"
+19.
+C:\Users\asus>label
+Volume in drive C: has no label
+Volume Serial Number is D4DD-5E0A
+Volume label (32 characters, ENTER for none)?
+20.
+C:\Users\asus>ftype txtfile
+txtfile=%SystemRoot%\system32\NOTEPAD.EXE %1
