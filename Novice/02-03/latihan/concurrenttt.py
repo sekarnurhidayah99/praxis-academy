@@ -1,6 +1,5 @@
 import requests
-import time
-
+import time 
 
 def download_site(url, session):
     with session.get(url) as response:
@@ -17,8 +16,10 @@ if __name__ == "__main__":
     sites = [
         "https://www.jython.org",
         "http://olympus.realpython.org/dice",
-    ] * 80
+    ] * 10
     start_time = time.time()
     download_all_sites(sites)
     duration = time.time() - start_time
     print(f"Downloaded {len(sites)} in {duration} seconds")
+
+    
