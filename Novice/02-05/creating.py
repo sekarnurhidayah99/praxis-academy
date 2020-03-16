@@ -76,7 +76,7 @@ TABLES['titles'] = (
     "     REFERENCES `employees` (`emp_no`) ON DELETE CASCADE"
     ") ENGINE=InnoDB")
 
-cnx = mysql.connector.connect(user='scott')
+cnx = mysql.connector.connect(user='root')
 cursor = cnx.cursor()
 
 def create_database(cursor):
@@ -98,3 +98,19 @@ except mysql.connector.Error as err:
     else:
         print(err)
         exit(1)
+        
+        for table_name in TABLES:
+            table_description = TABLES[table_name]
+            try:
+                print("Creating table {}: ".format(table_name), end='')
+                cursor.execute(table_description)
+            except mysql.connector.Error as err:
+                    if err.errno == errorcode.ER_TABLE_EXISTS_ERROR:
+                        print("already exists.")
+            else:
+                print(err.msg)
+        else:
+            print("OK")
+
+cursor.close()
+cnx.close()
