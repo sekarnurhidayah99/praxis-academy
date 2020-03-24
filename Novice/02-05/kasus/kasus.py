@@ -2,7 +2,7 @@ import mysql.connector
 from mysql.connector import Error
 
 try:
-    connection = mysql.connector.connect(user='root',host='localhost',password='',database='magang')
+    connection = mysql.connector.connect(user='root',host='localhost',password='',database='movies')
     sql_select_query = "select * from detail"
     cursor = connection.cursor()
     cursor.execute(sql_select_query)
