@@ -1,6 +1,7 @@
 from flask import request
+from flask import Flask
 
-app = request(__name__)
+app = Flask(__name__)
 
 @app.route('/login', methods=['GET', 'POST'])
 def login():
@@ -9,5 +10,5 @@ def login():
     else:
         return show_the_login_form()
 
-if __name__ == '__main__':
+if __name__==('__main__'):
     app.run(debug=True)
