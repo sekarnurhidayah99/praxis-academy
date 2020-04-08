@@ -1,6 +1,7 @@
 from flask import Flask, Response, render_template, redirect, request, url_for, flash
 
-from wtforms import Form, Author, CreateAuthorForm, db
+from wtforms import Form, CreateAuthorForm, db
+admin = Flask(__name__, template_folder='templates')
 
 @admin.route('/author/create', methods = ['GET', 'POST'])
 def create_author():
@@ -14,3 +15,6 @@ def create_author():
         return redirect(url_for('main.display_authors'))
 
     return render_template('create_author.htm', form=form)
+if __name__ == '__main__':
+    admin.run(debug=True)
+    
